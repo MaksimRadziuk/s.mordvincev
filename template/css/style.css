@@ -1581,118 +1581,7 @@ footer .soc-bar a.soc-11 {
     width: 300px;
 }
 
-                /* ======== FAQ PAGE ========= */
-/* === first page === */
-#main-faq .fp-bg{
-    width: 100%;
-    height: 100vh;
-    background-color: #1d1e19;
-}
-#main-faq .faq-nav {
-    float:left;
-    margin: 6vh 0 0 20vh;
-    position: fixed;
-    font-size:1.6822vh;
-    font-weight: 300;
-    color:#51524e;
-}
-#main-faq .faq-nav a{
-    text-decoration: none;
-    color: #51524e;
-}
-#main-faq .faq-nav .active {
-    color:#00ebab;
-}
-#main-faq h1{
-    font-size: 5vh;
-    margin-top: 6vh;
-    font-weight: 300;
-    color:#fff;
-}
-#main-faq .faq-circle {
-    display: inline-block;
-    width: 14vw;
-    height: 14vw;
-    border-radius: 50%;
-    position: relative;
-    margin-top: 5vw;
-}
-#main-faq .faq-circle:nth-child(even) {
-    top:10vw;
-}
-#main-faq .faq-circle #circle-faq {
-    display: block;
-    text-decoration: none;
-    width: 12vw;
-    height: 12vw;
-    background: url("../img/circle-faq.png") no-repeat;
-    background-size: 80%;
-    background-position: center;
-    position: absolute;
-    top: 1vw;
-    left: 1vw;  
-    transition: all 0.3s ease;
-}
-#main-faq .faq-circle:nth-child(even) #circle-faq{
-    transform: rotateZ(90deg);
-
-}
-#main-faq .faq-circle:nth-child(1) {
-    background: url("../img/mountains.png") center center no-repeat;
-    background-color: #20211c;
-    background-size: 50% 30%;
-}
-#main-faq .faq-circle:nth-child(2) {
-    background: url("../img/birds.png") center center no-repeat;
-    background-color: #20211c;
-    background-size: 40% 50%;
-}
-#main-faq .faq-circle:nth-child(3) {
-    background: url("../img/Head-elk.png") center center no-repeat;
-    background-color: #20211c;
-    background-size: 50% 50%;
-}
-#main-faq .faq-circle:nth-child(4) {
-    background: url("../img/hack.png") center center no-repeat;
-    background-color: #20211c;
-    background-size: 50% 50%;
-}
-#main-faq .faq-circle:nth-child(odd):hover #circle-faq {
-    transform:rotateZ(90deg);
-   
-}
-#main-faq .faq-circle:nth-child(even):hover #circle-faq {
-    transform:rotateZ(0deg);
-   
-}
-#main-faq #faq-links {
-    font-size:1.6822vh;
-    font-weight: 300;
-    text-decoration: none;
-    color: #fff; 
-    position: absolute;
-    width: 150px;
-}
-#main-faq .faq-circle:nth-child(1) #faq-links {
-    top:0;
-    left: 10vw;
-}
-#main-faq .faq-circle:nth-child(2) #faq-links{
-    top:12vw;
-    left: 10vw;
-}
-#main-faq .faq-circle:nth-child(3) #faq-links{
-    top:0;
-    left: 10vw;
-}
-#main-faq .faq-circle:nth-child(4) #faq-links{
-    top:12vw;
-    left: 10vw;
-}
-
-
-
-                /* ======== END FAQ PAGE ========= */
+                
 
 @media all and (max-width: 1024px){
     #main-welcome .fp-bg {
@@ -2092,3 +1981,229 @@ footer .soc-bar a.soc-11 {
         font-size: 20px;
     }
 }
+
+
+/* ======== FAQ PAGE ========= */
+
+/* === first page === */
+
+#main-faq .fp-bg{
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1e19;
+}
+#main-faq .faq-nav {
+    float:left;
+    margin: 6vh 0 0 20vh;
+    position: fixed;
+    font-size:1.6822vh;
+    font-weight: 300;
+    color:#51524e;
+}
+#main-faq .faq-nav a{
+    text-decoration: none;
+    color: #51524e;
+}
+#main-faq .faq-nav .active {
+    color:#184e3c;
+}
+#main-faq h1{
+    font-size: 5vh;
+    margin-top: 6vh;
+    font-weight: 300;
+    color:#fff;
+    text-transform: uppercase;
+}
+#main-faq .faq-circle {
+    display: inline-block;
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 5vw;
+}
+#main-faq .faq-circle:nth-child(even) {
+    top:10vw;
+}
+#main-faq .faq-circle #circle-faq {
+    display: block;
+    text-decoration: none;
+    width: 12vw;
+    height: 12vw;
+    background: url("../img/circle-faq.png") no-repeat;
+    background-size: 80%;
+    background-position: center;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;  
+    transition: all 0.3s ease;
+}
+#main-faq .faq-circle:nth-child(even) #circle-faq{
+    transform: rotateZ(90deg);
+
+}
+#main-faq .faq-circle:nth-child(1) {
+    background: url("../img/mountains.png") center center no-repeat;
+    background-color: #20211c;
+    background-size: 30% 10%;
+}
+#main-faq .faq-circle:nth-child(2) {
+    background: url("../img/birds.png") center center no-repeat;
+    background-color: #20211c;
+    background-size: 40% 50%;
+}
+#main-faq .faq-circle:nth-child(3) {
+    background: url("../img/Head-elk.png") center center no-repeat;
+    background-color: #20211c;
+    background-size: 30% 30%;
+}
+#main-faq .faq-circle:nth-child(4) {
+    background: url("../img/hack.png") center center no-repeat;
+    background-color: #20211c;
+    background-size: 30% 30%;
+}
+#main-faq .faq-circle:nth-child(odd):hover #circle-faq {
+    transform:rotateZ(90deg);
+   
+}
+#main-faq .faq-circle:nth-child(even):hover #circle-faq {
+    transform:rotateZ(0deg);
+   
+}
+#main-faq #faq-links {
+    font-size:1.6822vh;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff; 
+    position: absolute;
+    width: 170px;
+    text-align: left;
+}
+#main-faq .faq-circle:nth-child(1) #faq-links {
+    top:0;
+    left: 13vw;
+}
+#main-faq .faq-circle:nth-child(2) #faq-links{
+    top:13vw;
+    left: 13vw;
+}
+#main-faq .faq-circle:nth-child(3) #faq-links{
+    top:0;
+    left: 13vw;
+}
+#main-faq .faq-circle:nth-child(4) #faq-links{
+    top:13vw;
+    left: 13vw;
+}
+
+/* ===== second page (общие вопросы) ===== */
+
+#faq-questions .fp-bg{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+#faq-questions h1{
+    font-size: 5vh;
+    margin-top: 6vh;
+    font-weight: 300;
+    color:#12130f;
+    text-transform: uppercase;
+    margin-bottom: 2.5vw;
+}
+#faq-questions .question-box {
+    display: block;
+    margin: 2.5vw auto 0 auto;
+    width: 65vw;
+    min-width: 440px;
+    height: 27vh;
+    overflow: hidden;
+    border-bottom: 1px dotted #cdcdcd;
+}
+#faq-questions .question-box .question-block {
+    width: 100%;
+    display: block;
+    height: 75px;
+
+}
+#faq-questions .question-box .question-block .question{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    float:left;
+    background: url(../img/question.png) center center no-repeat;
+}
+#faq-questions .question-box .question-block p {
+    display: inline-block;
+    font-size:1.6822vh;
+    font-weight: 500;
+    color:#12130f;
+    float: left;
+    line-height: 70px;
+    margin-left: 20px;
+    letter-spacing: 1.5px;
+}
+#faq-questions .question-box .answer-block {
+    width: 89%;
+    display: block;
+    margin-left: 10%;
+    height: 55%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+#faq-questions .question-box .answer-block .answer {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    float:left;
+    background: url(../img/answer.png) center center no-repeat;
+}
+#faq-questions .question-box .answer-block p {
+    display: inline-block;
+    float: left;
+    font-size:1.6822vh;
+    font-weight: 300;
+    color:#12130f;
+    text-align: left;
+    margin-left: 20px;
+    width: 50vw;
+    margin-right: 0;
+}
+#faq-questions .question-box .arrow-holder a {
+    display: block;
+    margin:0 auto;
+    text-decoration: none;
+    background: url("../img/arrows-faq.png") center center no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 10px;
+}
+
+/* ===== third page (условия работы) ===== */
+#faq-conditions h1{
+    font-size: 5vh;
+    margin-top: 6vh;
+    font-weight: 300;
+    color:#12130f;
+    text-transform: uppercase;
+    margin-bottom: 2.5vw;
+}
+/* ===== fourth page (вопросы по услугам) ===== */
+#faq-service h1 {
+    font-size: 5vh;
+    margin-top: 6vh;
+    font-weight: 300;
+    color:#12130f;
+    text-transform: uppercase;
+    margin-bottom: 2.5vw;
+}
+/* ===== fifth page (финансы) ===== */
+#faq-finance h1{
+    font-size: 5vh;
+    margin-top: 6vh;
+    font-weight: 300;
+    color:#12130f;
+    text-transform: uppercase;
+    margin-bottom: 2.5vw;
+}
+                /* ======== END FAQ PAGE ========= */
