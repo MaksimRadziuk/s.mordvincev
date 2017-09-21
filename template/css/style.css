@@ -1994,11 +1994,13 @@ footer .soc-bar a.soc-11 {
 }
 #main-faq .faq-nav {
     float:left;
-    margin: 6vh 0 0 20vh;
+    top:40px;
+    left:10%;
     position: fixed;
     font-size:1.6822vh;
     font-weight: 300;
     color:#51524e;
+    z-index: 9;
 }
 #main-faq .faq-nav a{
     text-decoration: none;
@@ -2023,7 +2025,7 @@ footer .soc-bar a.soc-11 {
     margin-top: 5vw;
 }
 #main-faq .faq-circle:nth-child(even) {
-    top:10vw;
+    top:11vw;
 }
 #main-faq .faq-circle #circle-faq {
     display: block;
@@ -2051,24 +2053,19 @@ footer .soc-bar a.soc-11 {
     background: url("../img/birds.png") center center no-repeat;
     background-color: #20211c;
     background-size: 40% 50%;
+    left:-2vw;
 }
 #main-faq .faq-circle:nth-child(3) {
     background: url("../img/Head-elk.png") center center no-repeat;
     background-color: #20211c;
     background-size: 30% 30%;
+    left:-4vw;
 }
 #main-faq .faq-circle:nth-child(4) {
     background: url("../img/hack.png") center center no-repeat;
     background-color: #20211c;
     background-size: 30% 30%;
-}
-#main-faq .faq-circle:nth-child(odd):hover #circle-faq {
-    transform:rotateZ(90deg);
-   
-}
-#main-faq .faq-circle:nth-child(even):hover #circle-faq {
-    transform:rotateZ(0deg);
-   
+    left:-6vw;
 }
 #main-faq #faq-links {
     font-size:1.6822vh;
@@ -2116,9 +2113,10 @@ footer .soc-bar a.soc-11 {
     margin: 2.5vw auto 0 auto;
     width: 65vw;
     min-width: 440px;
-    height: 27vh;
+    height: 250px;
     overflow: hidden;
     border-bottom: 1px dotted #cdcdcd;
+    position: relative;
 }
 #faq-questions .question-box .question-block {
     width: 100%;
@@ -2132,6 +2130,7 @@ footer .soc-bar a.soc-11 {
     height: 70px;
     float:left;
     background: url(../img/question.png) center center no-repeat;
+    background-size: 100%;
 }
 #faq-questions .question-box .question-block p {
     display: inline-block;
@@ -2139,7 +2138,7 @@ footer .soc-bar a.soc-11 {
     font-weight: 500;
     color:#12130f;
     float: left;
-    line-height: 70px;
+    margin-top: 30px;
     margin-left: 20px;
     letter-spacing: 1.5px;
 }
@@ -2147,7 +2146,7 @@ footer .soc-bar a.soc-11 {
     width: 89%;
     display: block;
     margin-left: 10%;
-    height: 55%;
+    height: 140px;
     overflow: hidden;
     margin-bottom: 15px;
 }
@@ -2157,26 +2156,32 @@ footer .soc-bar a.soc-11 {
     height: 70px;
     float:left;
     background: url(../img/answer.png) center center no-repeat;
+    background-size: 100%;
 }
 #faq-questions .question-box .answer-block p {
     display: inline-block;
     float: left;
     font-size:1.6822vh;
     font-weight: 300;
-    color:#12130f;
+    color:#191919;
     text-align: left;
     margin-left: 20px;
     width: 50vw;
     margin-right: 0;
+    margin-top: 10px;  
+    height: 80px;
+    overflow: hidden;
 }
 #faq-questions .question-box .arrow-holder a {
     display: block;
-    margin:0 auto;
+    position: absolute;
     text-decoration: none;
     background: url("../img/arrows-faq.png") center center no-repeat;
     background-size: cover;
     width: 15px;
     height: 10px;
+    bottom: 10px;
+    left:50%;
 }
 
 /* ===== third page (условия работы) ===== */
@@ -2207,3 +2212,246 @@ footer .soc-bar a.soc-11 {
     margin-bottom: 2.5vw;
 }
                 /* ======== END FAQ PAGE ========= */
+
+@media all and (max-width: 1368px){
+    #faq-questions .question-box {
+        margin: 1.5vw auto 1px auto;
+        height: 160px;
+    }
+    #faq-questions .question-box .question-block p {
+        font-size:16px;
+    }
+    #faq-questions .question-box .answer-block p {
+        height: 33px;
+        font-size: 14px;
+        width: 45vw;
+    }
+    
+}
+@media all and (max-width: 1024px){
+    #main-faq .faq-nav {
+    font-size:14px;
+    top:30px;
+    }
+    #main-faq h1{
+    font-size: 5vh;
+    margin-top: 10vh;
+    }
+    #main-faq .faq-circle {
+        width:190px;
+        height: 190px;
+    }
+    #main-faq .faq-circle #circle-faq {
+    width: 170px;
+    height: 170px;
+    top: 10px;
+    left: 10px;  
+    }
+    #main-faq #faq-links {
+    font-size:14px;
+    }
+    #main-faq .faq-circle:nth-child(1) #faq-links {
+    top:0;
+    left: 170px;
+    }
+    #main-faq .faq-circle:nth-child(2) #faq-links{
+        top:170px;
+        left: 170px;
+    }
+    #main-faq .faq-circle:nth-child(3) #faq-links{
+        top:0;
+        left: 170px;
+    }
+    #main-faq .faq-circle:nth-child(4) #faq-links{
+        top:170px;
+        left: 170px;
+    }
+
+    #faq-questions h1{
+        margin-top: 7vh;
+        margin-bottom: 1vw;
+    }
+    #faq-questions .question-box {
+        margin: 1.5vw auto 1px auto;
+        height: 170px;
+    }
+    #faq-questions .question-box .question-block {
+        height: 40px;
+    }
+    #faq-questions .question-box .question-block .question{
+        width: 40px;
+        height: 40px;
+        }
+    #faq-questions .question-box .question-block p {
+        font-size:14px;
+        line-height: 40px;
+        margin-top: 0;
+        color:#000;
+    }
+    #faq-questions .question-box .answer-block {
+        height: 100px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    #faq-questions .question-box .answer-block .answer {
+        width: 40px;
+        height: 40px;
+    }
+    #faq-questions .question-box .answer-block p {
+        font-size:12px;
+        height: 33px;
+        color:#000;
+    }
+}
+@media all and (max-width: 760px){
+    #main-faq .faq-nav {
+    top:20px;
+    }
+    #main-faq .faq-circle:nth-child(1) {
+        left:-6vw;
+    }
+    #main-faq .faq-circle:nth-child(2) {
+        left:-11vw;
+        top:20vw;
+    }
+    #main-faq .faq-circle:nth-child(3) {
+        left:-16vw;
+    }
+    #main-faq .faq-circle:nth-child(4) {
+        left:30vw;
+        top:-10.5vw;
+    }
+    #faq-questions .question-box {
+        width:90%;
+    }
+    #faq-questions .question-box .answer-block {
+       width: 90%;
+    }
+    #faq-questions .question-box .answer-block p {
+        width: 90%;
+    }
+}
+@media all and (max-width: 320px){
+    #main-faq .faq-nav {
+        display: none;
+    }
+    #main-faq h1{
+        margin-top: 15vh;
+    }
+    #main-faq .faq-circle {
+        width:120px;
+        height: 120px;
+    }
+    #main-faq .faq-circle #circle-faq {
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 10px;  
+    }
+    #main-faq .faq-circle:nth-child(1) {
+        left:-6vw;
+    }
+    #main-faq .faq-circle:nth-child(2) {
+        left:6vw;
+        top:0vh;
+    }
+    #main-faq .faq-circle:nth-child(3) {
+        left:-6vw;
+        top:6vh;
+    }
+    #main-faq .faq-circle:nth-child(4) {
+        left:6vw;
+        top:6vh;
+    }
+    #main-faq .faq-circle #circle-faq{
+    transform: rotateZ(135deg);
+    }
+    #main-faq .faq-circle:nth-child(even) #circle-faq{
+    transform: rotateZ(135deg);
+    }
+    #main-faq #faq-links {
+    font-size:10px;
+    }
+    #main-faq .faq-circle:nth-child(1) #faq-links {
+        top:120px;
+        left: 15px;
+        width: 90px;
+        text-align: center;
+    }
+    #main-faq .faq-circle:nth-child(2) #faq-links{
+        top:120px;
+        left: 15px;
+        width: 90px;
+        text-align: center;
+    }
+    #main-faq .faq-circle:nth-child(3) #faq-links{
+        top:120px;
+        left: 15px;
+        width: 90px;
+        text-align: center;
+    }
+    #main-faq .faq-circle:nth-child(4) #faq-links{
+        top:120px;
+        left: 15px;
+        width: 90px;
+        text-align: center;
+    }
+    #faq-questions .question-box {
+        min-width: 300px;
+        height: 280px;
+        margin-top: 30px;
+    }
+    #faq-questions .question-box .question-block {
+        display: block;
+        width: 100%;
+        margin-left: 5px;
+    }
+    #faq-questions .question-box .question-block .question{
+        width: 30px;
+        height: 30px;
+        }
+    #faq-questions .question-box .answer-block .answer {
+        width: 30px;
+        height: 30px;
+    }
+    #faq-questions .question-box .question-block p {
+        margin-left: 5px;
+        font-size: 14px;
+        width: 80%;
+        line-height: 17px;
+        text-align:left;
+    }
+    #faq-questions .question-box .answer-block {
+       display: block;
+       width: 100%;
+       margin-left:5px;
+       height: 180px;
+    }
+    #faq-questions .question-box .answer-block p {
+        width: 80%;
+        margin-left: 5px;
+        height: 180px;
+        font-size: 14px;
+        margin-top: 0;
+    }
+    footer .copyright {
+        display: block;
+        height: 42px;
+        width: 100%;
+        line-height: 17px;
+        border:none;
+    }
+    footer .soc-bar {
+        display: block;
+        background-color: #12130f;
+        margin:0;
+        padding: 0;
+        height: 42px;
+        width: 320px; 
+        position: relative;
+        bottom: 83px;
+        left: 15px; 
+        line-height: 42px;
+        font-size: 30px; 
+    }
+}
