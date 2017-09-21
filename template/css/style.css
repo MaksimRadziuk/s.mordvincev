@@ -1994,7 +1994,7 @@ footer .soc-bar a.soc-11 {
 }
 #main-faq .faq-nav {
     float:left;
-    top:40px;
+    top:55px;
     left:10%;
     position: fixed;
     font-size:1.6822vh;
@@ -2023,6 +2023,55 @@ footer .soc-bar a.soc-11 {
     border-radius: 50%;
     position: relative;
     margin-top: 5vw;
+    cursor: pointer;
+    
+}
+#main-faq .faq-circle:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 255, 255, .2);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 50% 50%;
+    cursor: pointer;
+    
+}
+#main-faq .faq-circle:hover:after {
+    animation: rippled 3s ease-out;
+}
+
+@keyframes rippled {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    10% {
+        transform: scale(40, 40);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(50, 50);
+    }
+}
+@keyframes rippled320 {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    10% {
+        transform: scale(20, 20);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(30, 30);
+    }
 }
 #main-faq .faq-circle:nth-child(even) {
     top:11vw;
@@ -2034,7 +2083,7 @@ footer .soc-bar a.soc-11 {
     height: 12vw;
     background: url("../img/circle-faq.png") no-repeat;
     background-size: 80%;
-    background-position: center;
+    background-position: center center;
     position: absolute;
     top: 1vw;
     left: 1vw;  
@@ -2244,8 +2293,8 @@ footer .soc-bar a.soc-11 {
     #main-faq .faq-circle #circle-faq {
     width: 170px;
     height: 170px;
-    top: 10px;
-    left: 10px;  
+    top: 12px;
+    left: 12px;  
     }
     #main-faq #faq-links {
     font-size:14px;
@@ -2305,7 +2354,7 @@ footer .soc-bar a.soc-11 {
 }
 @media all and (max-width: 760px){
     #main-faq .faq-nav {
-    top:20px;
+        top:20px;
     }
     #main-faq .faq-circle:nth-child(1) {
         left:-6vw;
@@ -2342,6 +2391,10 @@ footer .soc-bar a.soc-11 {
         width:120px;
         height: 120px;
     }
+    #main-faq .faq-circle:after {
+        left: 58px;
+        top: 58px;
+    }
     #main-faq .faq-circle #circle-faq {
     width: 100px;
     height: 100px;
@@ -2363,14 +2416,17 @@ footer .soc-bar a.soc-11 {
         left:6vw;
         top:6vh;
     }
+    #main-faq .faq-circle:hover:after {
+        animation: rippled320 3s ease-out;
+    }
     #main-faq .faq-circle #circle-faq{
-    transform: rotateZ(135deg);
+        transform: rotateZ(135deg);
     }
     #main-faq .faq-circle:nth-child(even) #circle-faq{
-    transform: rotateZ(135deg);
+        transform: rotateZ(135deg);
     }
     #main-faq #faq-links {
-    font-size:10px;
+        font-size:10px;
     }
     #main-faq .faq-circle:nth-child(1) #faq-links {
         top:120px;
