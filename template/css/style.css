@@ -1992,8 +1992,7 @@ footer .soc-bar a.soc-11 {
     height: 100vh;
     background-color: #1d1e19;
 }
-#main-faq .faq-nav {
-    float:left;
+.faq-nav {
     top:55px;
     left:10%;
     position: fixed;
@@ -2002,11 +2001,11 @@ footer .soc-bar a.soc-11 {
     color:#51524e;
     z-index: 9;
 }
-#main-faq .faq-nav a{
+.faq-nav a{
     text-decoration: none;
     color: #51524e;
 }
-#main-faq .faq-nav .active {
+.faq-nav .active {
     color:#184e3c;
 }
 #main-faq h1{
@@ -2261,12 +2260,12 @@ footer .soc-bar a.soc-11 {
     text-transform: uppercase;
     margin-bottom: 2.5vw;
 }
-footer {
-
-}
                 /* ======== END FAQ PAGE ========= */
 
 @media all and (max-width: 1368px){
+    .faq-nav {
+        top:3vw;
+    }
     #faq-questions .question-box {
         margin: 1.5vw auto 1px auto;
         height: 160px;
@@ -2434,7 +2433,7 @@ footer {
     }
 }
 @media all and (max-width: 320px){
-    #main-faq .faq-nav {
+    .faq-nav {
         display: none;
     }
     #main-faq h1{
