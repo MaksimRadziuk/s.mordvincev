@@ -2221,7 +2221,7 @@ footer .soc-bar a.soc-11 {
     height: 80px;
     overflow: hidden;
 }
-#faq-questions .question-box .arrow-holder a {
+#faq-questions .question-box .arrow-holder {
     display: block;
     position: absolute;
     text-decoration: none;
@@ -2231,6 +2231,7 @@ footer .soc-bar a.soc-11 {
     height: 10px;
     bottom: 10px;
     left:50%;
+    cursor: pointer;
 }
 
 /* ===== third page (условия работы) ===== */
@@ -2259,6 +2260,9 @@ footer .soc-bar a.soc-11 {
     color:#12130f;
     text-transform: uppercase;
     margin-bottom: 2.5vw;
+}
+footer {
+
 }
                 /* ======== END FAQ PAGE ========= */
 
@@ -2350,6 +2354,55 @@ footer .soc-bar a.soc-11 {
         font-size:12px;
         height: 33px;
         color:#000;
+    }
+    #fp-nav {
+        display: none;
+    }
+    .pagination {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 260px;
+        position: absolute;
+        bottom:60px;
+        left:50%;
+        margin-left: -130px;
+        list-style: none;
+    }
+    .pagination:before {
+        content: "";
+        width: 10px;
+        height: 25px;
+        margin-right: 30px;
+        background-image: url(../img/right-angle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        color: #1c1c1c;
+        transform: rotateZ(180deg);
+    }
+    .pagination:after {
+        content: "";
+        width: 10px;
+        height: 25px;
+        background-image: url(../img/right-angle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        color: #1c1c1c;
+        margin-left: 30px;
+    }
+    .pagination li a {
+        display: block;
+        text-decoration: none;
+        width: 6px;
+        height: 6px;
+        margin: 10px;
+        background-color: #ddd;
+    }
+    .pagination li a:active {
+        background-color:#00EBAB;
     }
 }
 @media all and (max-width: 760px){
@@ -2452,6 +2505,9 @@ footer .soc-bar a.soc-11 {
         width: 90px;
         text-align: center;
     }
+    #faq-questions h1 {
+        margin-top: 13vh;
+    }
     #faq-questions .question-box {
         min-width: 300px;
         height: 280px;
@@ -2489,6 +2545,9 @@ footer .soc-bar a.soc-11 {
         height: 180px;
         font-size: 14px;
         margin-top: 0;
+    }
+    .pagination {
+        display: none;
     }
     footer .copyright {
         display: block;
