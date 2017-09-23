@@ -2630,7 +2630,7 @@ footer .soc-bar a.soc-11 {
     #main-faq .faq-circle:nth-child(even) {
         top:2vh;
     }
-    #faq-questions {
+    #main-portfolio {
         position: relative;
     }
     #faq-questions h1 {
@@ -2638,7 +2638,7 @@ footer .soc-bar a.soc-11 {
     }
     
     
-    footer .copyright {
+    .footer-faq .copyright {
         display: block;
         position: absolute;
         height: 42px;
@@ -2650,7 +2650,7 @@ footer .soc-bar a.soc-11 {
         padding: 0 10px;
         margin: 0;
     }
-    footer .soc-bar {
+    .footer-faq .soc-bar {
         display: block;
         position: absolute;
         bottom: 42px;
