@@ -187,3 +187,37 @@ $("document").ready(function(){
 
 
 });
+
+
+//раздвигание ответа в Общих вопросах
+var sl = document.getElementsByClassName("arrow-holder");
+var i;
+
+for (i = 0; i < sl.length; i++) {
+    sl[i].onclick = function() {
+        this.classList.toggle("active");
+        this.previousElementSibling.classList.toggle("show");
+        this.parentElement.classList.toggle("show");
+    }
+}
+
+//добавление текста и стиля в faq-nav
+
+$(function(){
+ var topPos = $('.slash, #hidden').offset().top; 
+ $(window).scroll(function() { 
+  var top = $(document).scrollTop();
+  if (top > topPos) $('.slash, #hidden').addClass('show'); 
+  else $('.slash, #hidden').removeClass('show');
+ });
+});
+
+$(function(){
+ var topPos = $('#active, #hidden').offset().top; 
+ $(window).scroll(function() { 
+  var top = $(document).scrollTop();
+  if (top > topPos) $('#active, #hidden').addClass('active'); 
+  else $('#active, #hidden').removeClass('active');
+ });
+});
+
