@@ -1,0 +1,199 @@
+body {
+    padding: 0;
+    margin: 0; 
+    font-family: 'Bicubik', sans-serif;
+    background-color: transparent;
+}
+
+#stub1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bcg1-1920.png);
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.head-logo {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    left: 0;
+}
+
+.head-logo .logo-container {
+    display: inline-block;
+    width: 250px;
+    height: 80px;
+    background-image: url(../img/MVACorp_logo230-80.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.head-logo .head-text {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 150px;
+    text-align: left;
+    padding:40px 0 0 10px;
+    line-height: 18px
+}
+
+.foottext {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.foottext .text-part {
+    display: inline-block;
+    text-align: right;
+    padding:0 50px 0 10px;
+}
+.foottext .divider {
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+}
+.foottext .copyright-part {
+    padding: 0 10px 0 0;
+}
+
+.foottext .skype-part {
+    padding: 0 20vw 0 30px;
+    height: 20px;
+    line-height: 20px;
+    background-image: url(../img/Skype-icon.png);
+    background-size: 4.2%;
+    background-repeat: no-repeat;
+}
+#stub1 .monitor-block {
+    position: relative;
+    top: 290px;
+    left:38%;
+    display: block;
+    max-width: 690px;
+    min-width: 550px;
+    max-height: 500px;
+    min-height: 387px;
+    overflow: hidden;
+}
+#stub1 .monitor {
+    display: block;
+    position: absolute;
+    width: 680px;
+    height: 1796px;
+    background-image: url(../img/content1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0px;
+    left:0px;
+    z-index: -2;
+    animation:skroll 10s ease-in-out infinite;
+    animation-delay: 0s;
+}
+@keyframes skroll {
+    0% {
+        top:0;
+    }
+    10% {
+        top: 0;
+    }
+    40% {
+        top: -600px;
+    }
+    60% {
+        top: -800px;
+    }
+    90% {
+        top:-1408px;
+    }
+    100% {
+        top:0;
+    }
+}
+@media all and (max-width:1800px) {
+    #stub1 .monitor-block {
+        left:36%;
+    }
+}
+@media all and (max-width:1600px) {
+    #stub1 .monitor-block {
+        left:35%;
+    }
+}
+@media all and (max-width:1400px) {
+    #stub1 .monitor-block {
+        left:33%;
+    }
+}
+@media all and (max-width:1280px) {
+    #stub1 .monitor-block {
+        left:32%;
+    }
+}
+#stub1 button {
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 30px 50px;
+    background-color: #394048;
+    border:none;
+    color:#fff;
+}
+.order {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#stub1 .block-color {
+    width: 545px;
+    height: 460px;
+    background-color: #f54657;
+    position: absolute;
+    right: 0;
+    top: 152px;
+    color:#fff;
+    font-weight: 300;
+    -webkit-box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75);
+    box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75); 
+}
+#stub1 .block-color h2 {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+#stub1 .block-color h1 {
+    margin-top: 65px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300S;
+    margin-left: -5px;
+}
+#stub1 .block-color h1 span {
+    display: block;
+    margin-left: 140px;
+}
+#stub1 .block-color button {
+    margin: 138px 0 0 50px;
+}
