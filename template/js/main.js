@@ -221,3 +221,10 @@ $(function(){
  });
 });
 
+$(function(){
+$("#typed").typed({
+strings: ["- приносит миллионы"],
+typeSpeed: 0
+}4000);
+});
+

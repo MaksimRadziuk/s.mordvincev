@@ -4,17 +4,26 @@ body {
     padding: 0;
     margin: 0; 
     font-family: 'Bicubik', sans-serif;
-    background-color: transparent;
+    background-color: #5e646a;
 }
 
 #stub1 {
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/bcg1-1920.png);
+    background-image: url(../img/bcg1920-1.png);
     background-size: fixed;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left top;
     overflow: hidden;
+    animation: fade 3s linear;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .head-logo {
@@ -63,6 +72,7 @@ body {
     font-size: 10px;
     text-transform: uppercase;
     color: #fff;
+    z-index: 999;
 }
 
 .foottext .text-part {
@@ -90,16 +100,39 @@ body {
     background-size: 4.2%;
     background-repeat: no-repeat;
 }
+.container-monitor {
+    display: block;
+    position: relative;
+    height: 590px;
+    top: 280px;
+    left: 0;
+    overflow: hidden;
+    opacity: 1;
+    /* animation:fadeMonitor 6s linear; */
+}
+/* @keyframes fadeMonitor {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+} */
 #stub1 .monitor-block {
     position: relative;
-    top: 290px;
-    left:38%;
+    top: -360px;
+    left:0;
     display: block;
-    max-width: 690px;
-    min-width: 550px;
-    max-height: 500px;
-    min-height: 387px;
+    width: 100vw;
+    height: 90vh;
     overflow: hidden;
+    background-image: url(../img/pc1920-1.png);
+    background-size: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
 }
 #stub1 .monitor {
     display: block;
@@ -109,50 +142,31 @@ body {
     background-image: url(../img/content1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    top: 0px;
-    left:0px;
-    z-index: -2;
+    top: 290px;
+    left:729px;
     animation:skroll 10s ease-in-out infinite;
     animation-delay: 0s;
+    z-index: -9;
+
 }
-@keyframes skroll {
+ @keyframes skroll {
     0% {
-        top:0;
+        top:290px;
     }
     10% {
-        top: 0;
+        top: 290px;
     }
     40% {
-        top: -600px;
+        top: 50px;
     }
     60% {
-        top: -800px;
+        top: -200px;
     }
     90% {
-        top:-1408px;
+        top:-1118px;
     }
     100% {
-        top:0;
-    }
-}
-@media all and (max-width:1800px) {
-    #stub1 .monitor-block {
-        left:36%;
-    }
-}
-@media all and (max-width:1600px) {
-    #stub1 .monitor-block {
-        left:35%;
-    }
-}
-@media all and (max-width:1400px) {
-    #stub1 .monitor-block {
-        left:33%;
-    }
-}
-@media all and (max-width:1280px) {
-    #stub1 .monitor-block {
-        left:32%;
+        top:290px;
     }
 }
 #stub1 button {
@@ -183,10 +197,32 @@ body {
     -webkit-box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75);
     box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75); 
+    z-index: 99;
+    animation: rightBoxAppearance 3s linear;
+}
+@keyframes rightBoxAppearance {
+    0% {
+        right: -545px;
+        opacity: 0;
+    }
+    50% {
+        right: -545px;
+        opacity: 0;
+    }
+    95% {
+        right: 10px;
+        opacity: 1;
+    }
+    100%{
+        right: 0;
+        opacity: 1;
+    }
 }
 #stub1 .block-color h2 {
     font-family: 'Bicubik', sans-serif;
     font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 2px;
     margin-top: 70px;
     margin-left: 50px;
     text-transform: uppercase;
@@ -194,15 +230,25 @@ body {
 #stub1 .block-color h1 {
     font-family: 'Bicubik', sans-serif;
     margin-top: 65px;
-    font-size: 40px;
+    font-size: 48px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 300;
     margin-left: -5px;
+    white-space: nowrap;
+    width: 19ch;
+    overflow: hidden;
+    animation:typed 3s steps(19, end) backwards;
+}
+@keyframes typed {
+    0% {
+        width: 0ch;
+    }
 }
 #stub1 .block-color h1 span {
     display: block;
     margin-left: 140px;
 }
 #stub1 .block-color button {
-    margin: 116px 0 0 50px;
+    margin: 107px 0 0 50px;
 }
