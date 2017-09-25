@@ -1,3 +1,5 @@
+
+
 body {
     padding: 0;
     margin: 0; 
@@ -43,6 +45,7 @@ body {
     color: #fff;
     width: 150px;
     text-align: left;
+    font-family: 'Bicubik', sans-serif;
     padding:40px 0 0 10px;
     line-height: 18px
 }
@@ -66,6 +69,7 @@ body {
     display: inline-block;
     text-align: right;
     padding:0 50px 0 10px;
+    font-family: 'Bicubik', sans-serif;
 }
 .foottext .divider {
     height: 100%;
@@ -74,9 +78,11 @@ body {
 }
 .foottext .copyright-part {
     padding: 0 10px 0 0;
+    font-family: 'Bicubik', sans-serif;
 }
 
 .foottext .skype-part {
+    font-family: 'Bicubik', sans-serif;
     padding: 0 20vw 0 30px;
     height: 20px;
     line-height: 20px;
@@ -157,6 +163,7 @@ body {
     background-color: #394048;
     border:none;
     color:#fff;
+    font-family: 'Bicubik', sans-serif;
 }
 .order {
     position: absolute;
@@ -178,16 +185,18 @@ body {
     box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75); 
 }
 #stub1 .block-color h2 {
+    font-family: 'Bicubik', sans-serif;
     font-size: 18px;
     margin-top: 70px;
     margin-left: 50px;
     text-transform: uppercase;
 }
 #stub1 .block-color h1 {
+    font-family: 'Bicubik', sans-serif;
     margin-top: 65px;
     font-size: 40px;
     text-transform: uppercase;
-    font-weight: 300S;
+    font-weight: 300;
     margin-left: -5px;
 }
 #stub1 .block-color h1 span {
@@ -195,5 +204,5 @@ body {
     margin-left: 140px;
 }
 #stub1 .block-color button {
-    margin: 138px 0 0 50px;
+    margin: 116px 0 0 50px;
 }
