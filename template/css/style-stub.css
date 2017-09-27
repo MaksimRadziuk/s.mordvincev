@@ -3,267 +3,267 @@
 body {
     padding: 0;
     margin: 0; 
+}
+
+a, p, span {
     font-family: 'Bicubik', sans-serif;
-    background-color: #5e646a;
-    overflow: hidden;
+    color:#fff;
 }
 
-#stub1 {
-    width: 100vw;
-    height: 100vh;
-
-    background-image: url(../img/bcg1920-1.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: left top;
-    animation: fade 3s linear;
-}
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+a {
+    text-decoration: none;
 }
 
-.head-logo {
-    padding-left: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    top: -5px;
-    left: 0;
-}
-
-.head-logo .logo-container {
-    display: inline-block;
-    width: 250px;
-    height: 80px;
-    background-image: url(../img/MVACorp_logo230-80.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.head-logo .head-text {
-    display: inline-block;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #fff;
-    width: 150px;
-    text-align: left;
-    font-family: 'Bicubik', sans-serif;
-    padding:40px 0 0 10px;
-    line-height: 18px
-}
-
-.foottext {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    vertical-align: middle;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 30px;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #fff;
-    z-index: 999;
-}
-
-.foottext .text-part {
-    display: inline-block;
-    text-align: right;
-    padding:0 50px 0 10px;
-    font-family: 'Bicubik', sans-serif;
-}
-.foottext .divider {
-    height: 100%;
-    width: 2px;
-    background-color: #fff;
-}
-.foottext .copyright-part {
-    padding: 0 10px 0 0;
-    font-family: 'Bicubik', sans-serif;
-}
-
-.foottext .skype-part {
-    font-family: 'Bicubik', sans-serif;
-    padding: 0 20vw 0 30px;
-    height: 20px;
-    line-height: 20px;
-    background-image: url(../img/Skype-icon.png);
-    background-size: 4.2%;
-    background-repeat: no-repeat;
-}
-.container-monitor {
+button {
     display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 0px;
-    left: 0;
-    overflow: hidden;
-    background-image: url(../img/pc1920-1.png);
-    background-size: fixed;
-    background-repeat: no-repeat;
-    background-position: left top;
-    /* animation:fadeMonitor 6s linear; */
-}
-/* @keyframes fadeMonitor {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-} */
-#stub1 .monitor-block {
-    display: block;
-    position: relative;
-    top: 370px;
-    left:730px;
-    width: 680px;
-    height: 410px;
-    overflow: hidden;
-}
-#stub1 .monitor {
-    display: block;
-    position: absolute;
-    width: 680px;
-    height: 1796px;
-    background-image: url(../img/content1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 10px;
-    left:0px;
-    animation:skroll 10s ease-in-out infinite;
-    animation-delay: 0s;
-    z-index: -9;
-
-}
- @keyframes skroll {
-    0% {
-        top:10px;
-    }
-    10% {
-        top: 10px;
-    }
-    40% {
-        top: -400px;
-    }
-    60% {
-        top: -800px;
-    }
-    90% {
-        top:-1400px;
-    }
-    100% {
-        top:10px;
-    }
-}
-#stub1 button {
-    display: block;
-    font-size: 16px;
     text-transform: uppercase;
     padding: 30px 50px;
     background-color: #394048;
     border:none;
-    color:#fff;
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 1280px){
+
+.section1 {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #aaa;
+    position: relative;
+    background-image:url(../img/bcg1280х720.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+   /*  animation: fadeIn1 40s linear infinite; */
+}
+/* @keyframes fadeIn1 {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    } */
+.hover-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-image: url(../img/hover-bcg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.monitor {
+    display: block;
+    position: relative;
+    width: 550px;
+    height: 470px;
+    background-image: url(../img/pc1280x720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 180px;
+    left: 388px;
+    z-index: 9;
+    overflow: hidden;
+    animation: bottomAppearance 2s ease-in-out;
+}
+@keyframes bottomAppearance {
+    0% {
+        top:728px;
+    }
+    100% {
+        top: 180px;
+    }
+}
+.picture-box {
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 522px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 6;   
+}
+.picture-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 522px;
+    height: 1378px;
+    background-image: url(../img/content1-522x1378.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;   
+    animation: scroll 4s ease-in-out infinite;
+}
+@keyframes scroll {
+    0% {
+        top:0;
+    }
+    70% {
+        top:-1070px;
+    }
+    95% {
+        top:0;
+    }
+}
+.logo-box {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 80px;
+}
+.logo-box .logo-block {
+    display: inline-block;
+    width: 250px;
+    height: 100%;
+    background-image: url(../img/MVACorp_logo230-80.png);
+    background-repeat: no-repeat;
+}
+.text-block {
+    display: inline-block;
+    height: 100%;
+    width: 250px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 19px;
     font-family: 'Bicubik', sans-serif;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+}
+.foot-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    height: 30px;
+    width: 800px;
+}
+.foot-text span {
+    display: inline-block;
+    font-size: 12px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.divider {
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    background-color: #fff;
+}
+.skype-holder {
+    display: inline-block;
+    font-size: 12px;
+    text-transform:uppercase;
+    margin-right: 50px;
+}
+.skype-holder i {
+    font-size: 16px;
+    color:#fff;
+    display: inline-block;
+} 
+.skype-holder p {
+    display: inline-block;
+    margin-left: 10px;
 }
 .order {
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
 }
 
 .block-color {
-    width: 545px;
-    height: 460px;
+    width: 430px;
+    height: 320px;
     position: absolute;
     right: 0;
     top: 152px;
+    font-family: 'Bicubik', sans-serif;
     color:#fff;
     font-weight: 300;
     -webkit-box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75);
     -moz-box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75);
     box-shadow: -16px 0px 45px -24px rgba(0,0,0,0.75); 
     z-index: 99;
-    animation: rightBoxAppearance 3s linear;
+    animation: rightBoxAppearance 1s linear;
 }
-#stub1 .block-color {
+.section1 .block-color {
     background-color: #f54657;
-    color:#fff;
 }
 @keyframes rightBoxAppearance {
     0% {
         right: -545px;
-        opacity: 0;
     }
     50% {
         right: -545px;
-        opacity: 0;
     }
     95% {
-        right: 10px;
-        opacity: 1;
+        right: 30px;
     }
     100%{
         right: 0;
-        opacity: 1;
     }
 }
-.block-color h2 {
-    font-family: 'Bicubik', sans-serif;
-    font-size: 18px;
+.block-color p {
+    font-size: 16px;
     font-weight: 100;
     letter-spacing: 2px;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 50px;
     text-transform: uppercase;
 }
-.block-color h1 {
+.css-typing {
     display: block;
-    font-family: 'Bicubik', sans-serif;
-    margin-top: 25px;
-    font-size: 48px;
+    margin-top: 40px;
+    margin-left: -5px;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-weight: 300;
-    margin-left: -5px;
-    white-space: nowrap;
-    width: 19ch;
-    overflow: hidden;
-}
-.block-color h1 p span {
-    display: block;
-    margin-left: 145px;
-    margin-top: -5px;
-}
-.css-typing {
+    font-size: 36px;
     width: 15em;
     white-space:nowrap;
     overflow:hidden;
-    -webkit-animation: type 6s steps(50, end);
-    animation: type 6s steps(50, end);
+    -webkit-animation: type 2s steps(50, end);
+    animation: type 2s steps(50, end);
 }
 .css-typing1 {
-    margin-top: -40px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 36px;
+    display: block;
+    margin-left: 125px;
     width: 15em;
     white-space:nowrap;
     overflow:hidden;
-    -webkit-animation: types 9s steps(50, end);
-    animation: types 9s steps(50, end);
+    -webkit-animation: types 3s steps(50, end);
+    animation: types 3s steps(50, end);
 }
+
 @keyframes type{
     0% { width: 0; }
     50% {width: 0;}
@@ -274,14 +274,19 @@ body {
 }
 @keyframes types{
     0% { width: 0; }
-    40% {width: 0;}
+    50% {width: 0;}
 }
 @-webkit-keyframes types{
     0% { width: 0; }
-    40% {width: 0;}
+    50% {width: 0;}
 }
-#stub1 .block-color button {
+.block-color button {
     position: absolute;
     bottom: -1px;
     left: 50px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    }
 }
+
+
