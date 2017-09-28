@@ -3,6 +3,7 @@
 body {
     padding: 0;
     margin: 0; 
+    background-color: #394048;
 }
 
 a, p, span {
@@ -22,19 +23,80 @@ button {
     border:none;
     cursor: pointer;
 }
-
+.active {
+    display: block;
+    visibility: visible;
+}
 .section1 {
+    display: none;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #aaa;
+    background-color: #777c84;
     position: relative;
     background-image:url(../img/bcg1-1920x1070.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: left top;
+}
+.section2 {
+    display: none;
+  
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg2-1920x1070.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.section3 {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg3-1920x1070.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.section4 {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg4-1920x1070.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section5 {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #777c84;
+    position: relative;
+    background-image:url(../img/bcg5-1920x1070.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .hover-block {
     position: absolute;
@@ -43,9 +105,22 @@ button {
     width: 100vw;
     height: 100vh;
     z-index: 99;
-    background-image: url(../img/hover-bcg1-1920x1070.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+.section1 .hover-block {
+    background-image: url(../img/hover-bcg1-1920x1070.png);
+}
+.section3 .hover-block {
+    background-image: url(../img/hover-bcg3-1920x1070.png);
+}
+.section4 .hover-block {
+    background-image: url(../img/hover-bcg4-1920x1070.png);
+    background-position: center;
+}
+.section5 .hover-block {
+    background-image: url(../img/hover-bcg5-1920x1070.png);
+    background-position: center;
 }
 .monitor {
     display: block;
@@ -69,13 +144,14 @@ button {
         top: 346px;
     }
 }
+
 .picture-box {
     display: block;
     position: relative;
     top: 26px;
-    left: 20px;
-    width: 679px;
-    height: 381px;
+    left: 17px;
+    width: 686px;
+    height: 383px;
     overflow: hidden;
     z-index: 6;   
 }
@@ -84,24 +160,49 @@ button {
     position: absolute;
     top: 0;
     left: 0;
-    width: 679px;
+    width: 686px;
     height: 1795px;
-    background-image: url(../img/content1-522x1378.png);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;   
-    animation: scroll 4s ease-in-out infinite;
+    animation: scroll 6s ease-in-out infinite;
 }
 @keyframes scroll {
     0% {
         top:0;
     }
+    20% {
+        top: -100px;
+    }
+    40% {
+        top: -400px;
+    }
     70% {
-        top:-1380px;
+        top:-600px;
     }
     95% {
         top:0;
     }
+}
+.section1 .picture-box:before {
+    content: '';
+    background-image: url(../img/content1-522x1378.png);
+}
+.section2 .picture-box:before {
+    content: '';
+    background-image: url(../img/content2.png);
+}
+.section3 .picture-box:before {
+    content: '';
+    background-image: url(../img/content3.png);
+}
+.section4 .picture-box:before {
+    content: '';
+    background-image: url(../img/content4.png);
+}
+.section5 .picture-box:before {
+    content: '';
+    background-image: url(../img/content5.png);
 }
 .logo-box {
     display: block;
@@ -143,12 +244,13 @@ button {
     z-index: 999;
     overflow: hidden;
 }
-.foot-text span {
+.foot-text .foot-holder span {
     display: inline-block;
     font-size: 12px;
     color:#fff;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin: 0 20px;
 }
 .divider {
     display: inline-block;
@@ -161,6 +263,7 @@ button {
     font-size: 12px;
     text-transform:uppercase;
     margin-right: 50px;
+    letter-spacing: 2px;
 }
 .skype-holder i {
     font-size: 16px;
@@ -171,6 +274,12 @@ button {
     display: inline-block;
     margin-left: 10px;
 }
+.foot-holder {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
 .order {
     display: block;
     position: absolute;
@@ -178,6 +287,8 @@ button {
     right: 0;
     font-size: 16px;
     letter-spacing: 2px;
+    z-index: 999;
+    cursor: pointer;
 }
 
 .block-color {
@@ -195,9 +306,7 @@ button {
     z-index: 99;
     animation: rightBoxAppearance 2s linear;
 }
-.section1 .block-color {
-    background-color: #f54657;
-}
+
 @keyframes rightBoxAppearance {
     0% {
         right: -555px;
@@ -219,6 +328,21 @@ button {
     margin-top: 50px;
     margin-left: 50px;
     text-transform: uppercase;
+}
+.section1 .block-color {
+    background-color: #f54657;
+}
+.section2 .block-color {
+    background-color: #b6c02c;
+}
+.section3 .block-color {
+    background-color: #36d8c1;
+}
+.section4 .block-color {
+    background-color: #d8ce6d;
+}
+.section5 .block-color {
+    background-color: #b21623;
 }
 .css-typing {
     display: block;
@@ -247,6 +371,14 @@ button {
     -webkit-animation: types 4s steps(50, end);
     animation: types 4s steps(50, end);
 }
+.section5 .css-typing {
+    margin-top: 45px;
+    font-size: 72px;
+}
+.section5 .css-typing1 {
+    font-size: 72px;
+    margin-left: 190px;
+}
 
 @keyframes type{
     0% { width: 0; }
@@ -270,6 +402,7 @@ button {
     left: 50px;
     font-size: 16px;
     letter-spacing: 2px;
+    cursor: pointer;
     }
 
 @media all and (max-width: 1680px) {
@@ -277,9 +410,33 @@ button {
         background-size:1780px 1050px;
         background-position: right bottom;
     }
-    .hover-block {
+    .section2 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    .section3 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    .section4 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    .section5 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    .section1 .hover-block {
         background-size:1780px 1050px;
         background-position: right bottom;
+    }
+    .section4 .hover-block {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    .section5 .hover-block {
+        background-size:1780px 1070px;
+        background-position: center;
     }
     .monitor {
         width: 750px;
@@ -306,17 +463,6 @@ button {
         width: 716px;
         height: 1478px;
     }
-    @keyframes scroll {
-        0% {
-            top:0;
-        }
-        70% {
-            top:-1100px;
-        }
-        95% {
-            top:0;
-        }
-    }
     .block-color {
         width: 550px;
         height: 460px;
@@ -337,20 +483,13 @@ button {
         }
     }
     .foot-text {
-        width: 50%;
+        width: 80%;
     }
     .css-typing {
         font-size: 48px;
     }
     .css-typing1 {
         font-size: 48px;
-    }
-    .block-color button {
-        position: absolute;
-        bottom: -1px;
-        left: 50px;
-        font-size: 16px;
-        letter-spacing: 2px;
     }
 }
 
@@ -359,10 +498,10 @@ button {
 @media all and (max-width: 1280px){
 
     .section1 {
-        background-size:1280px 728px;
+        background-size:1280px 720px;
     }
-    .hover-block {
-        background-size:1280px 728px;
+    .section1 .hover-block {
+        background-size:1280px 720px;
     }
     .monitor {
         width: 500px;
@@ -373,10 +512,10 @@ button {
     }
     @keyframes bottomAppearance {
         0% {
-            top:728px;
+            top:720px;
         }
         100% {
-            top: 180px;
+            top: 227px;
         }
     }
     .picture-box {
@@ -388,17 +527,6 @@ button {
     .picture-box:before {
         width: 474px;
         height: 1378px;
-    }
-    @keyframes scroll {
-        0% {
-            top:0;
-        }
-        70% {
-            top:-1100px;
-        }
-        95% {
-            top:0;
-        }
     }
     .block-color {
         width: 430px;
@@ -419,19 +547,218 @@ button {
             right: 0;
         }
     }
+    .foot-text {
+        width: 70%;
+    }
     .css-typing {
+        margin-top: 45px;
         font-size: 36px;
     }
     .css-typing1 {
         font-size: 36px;
     }
+    .section5 .css-typing {
+        margin-top: 45px;
+        font-size: 48px;
+    }
+    .section5 .css-typing1 {
+        font-size: 48px;
+        margin-left: 110px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .section1 {
+        background-size:1230px 768px;
+        background-position: bottom right;
+    }
+    .section1 .hover-block {
+        background-size:1230px 768px;
+        background-position: bottom right;
+    }
+    .monitor {
+        width: 550px;
+        height: 460px;
+        top: 227px;
+        left: 190px;
+        background-size: 100%;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            top:768px;
+        }
+        100% {
+            top: 227px;
+        }
+    }
+    .picture-box {
+        top: 18px;
+        left: 13px;
+        width: 524px;
+        height: 294px;  
+    }
+    .picture-box:before {
+        width: 524px;
+        height: 1378px;
+    }
+    .block-color {
+        width: 330px;
+        height: 280px;
+        top: 152px;
+        }
+    @keyframes rightBoxAppearance {
+        0% {
+            right: -335px;
+        }
+        50% {
+            right: -335px;
+        }
+        95% {
+            right: 20px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    .foot-text {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .css-typing {
+        margin-top: 45px;
+        font-size: 24px;
+    }
+    .css-typing1 {
+        font-size: 24px;
+        margin-left: 70px;
+    }
+    .section5 .css-typing {
+        margin-top: 45px;
+        font-size: 34px;
+    }
+    .section5 .css-typing1 {
+        font-size: 34px;
+        margin-left: 70px;
+    }
     .block-color button {
-        position: absolute;
-        bottom: -1px;
-        left: 50px;
-        font-size: 16px;
-        letter-spacing: 2px;
+        left: 0px;
+        width: 100.5%;
+        padding: 30px 30px; 
     }
 }
 
+@media all and (max-width: 1015px) {
+    .foot-text {
+        display: block;
+        bottom: 30px;
+        right: 0;
+        height: 60px;
+        width: 100%;
+    }
+    .foot-text span {
+        display: inline-block;
+        margin-right: 10px;
+        line-height: 20px
+    }
+    .foot-text span:last-child {
+        margin-right: 45px;
+        margin-left: 10px;
+    }
+    .skype-holder p {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .skype-holder {
+        display: block;
+        float: right;
+    }
+    .foot-holder {
+        display: flex;
+        float: right;
+    }
+}
 
+@media all and (max-width: 768px) {
+    .section1 {
+        background-image: url(../img/bcg1-768x1024.png);
+        background-position: top left;
+        background-size: 768px 1024px;
+    }
+    .section1 .hover-block {
+        background-image: url(../img/hover-bcg1-768x1024.png);
+    }
+    .hover-block {
+        background-position: top left;
+        background-size: 768px 1024px;
+    }
+    .section5 {
+        background-image: url(../img/bcg5-768x1024.png);
+        background-position: center;
+        background-size: 768px 1024px;
+    }
+    .section5 .hover-block {
+        background-image: url(../img/hover-bcg5-768x1024.png);
+        background-position: center;
+        background-size: 768px 1024px;
+    }
+    .monitor {
+        width: 560px;
+        height: 500px;
+        top: 150px;
+        left: 165px;
+        background-size: 100%;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            left: 768px;
+        }
+        100% {
+            left: 165px;
+        }
+    }
+    .picture-box {
+        top: 18px;
+        left: 13px;
+        width: 535px;
+        height: 305px;  
+    }
+    .picture-box:before {
+        width: 535px;
+        height: 1378px;
+    }
+    .block-color {
+        width: 370px;
+        height: 280px;
+        top: 535px;
+        }
+    @keyframes rightBoxAppearance {
+        0% {
+            right: -375px;
+        }
+        50% {
+            right: -375px;
+        }
+        95% {
+            right: 20px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    .css-typing {
+        margin-top: 45px;
+        font-size: 24px;
+    }
+    .css-typing1 {
+        font-size: 24px;
+        margin-left: 70px;
+    }
+    
+    .block-color button {
+        right: 0px;
+        bottom: 0;
+        left: 50px;
+        width: 320px;
+        padding: 30px 30px; 
+    }
+}
