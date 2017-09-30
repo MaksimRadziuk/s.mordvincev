@@ -14,7 +14,7 @@
    <link href="template/css/style-stub.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <div class="section1" id="section">
+    <div class="section" id="section1">
         <div class="hover-block"></div>
         <div class="monitor">
             <div class="picture-box"></div>
@@ -39,9 +39,9 @@
             <span class="css-typing">- приносит </span><span class="css-typing1">миллионы</span>
             <button><a href="#">смотреть портфолио</a></button>
         </div>
-        <button class="order"><a href="#">заказать</a></button>
+        <button class="order" onClick="getElementById('win').removeAttribute('style');" type="button"><a href="#">заказать</a></button>
     </div>
-    <div class="section2" id="section">
+    <div class="section" id="section2">
         <div class="hover-block"></div>
         <div class="monitor">
             <div class="picture-box"></div>
@@ -66,9 +66,9 @@
             <span class="css-typing">- создаёт </span><span class="css-typing1">имидж</span>
             <button><a href="#">смотреть портфолио</a></button>
         </div>
-        <button class="order"><a href="#">заказать</a></button>
+        <button class="order" onClick="getElementById('win').removeAttribute('style');" type="button"><a href="#">заказать</a></button>
     </div>
-    <div class="section3" id="section">
+    <div class="section" id="section3">
         <div class="hover-block"></div>
         <div class="monitor">
             <div class="picture-box"></div>
@@ -93,9 +93,9 @@
             <span class="css-typing">- продаёт </span><span class="css-typing1">24/7</span>
             <button><a href="#">смотреть портфолио</a></button>
         </div>
-        <button class="order"><a href="#">заказать</a></button>
+        <button class="order" onClick="getElementById('win').removeAttribute('style');" type="button"><a href="#">заказать</a></button>
     </div>
-    <div class="section4" id="section">
+    <div class="section" id="section4">
         <div class="hover-block"></div>
         <div class="monitor">
             <div class="picture-box"></div>
@@ -120,9 +120,9 @@
             <span class="css-typing">- выводит </span><span class="css-typing1">в топ seo</span>
             <button><a href="#">смотреть портфолио</a></button>
         </div>
-        <button class="order"><a href="#">заказать</a></button>
+        <button class="order" onClick="getElementById('win').removeAttribute('style');" type="button"><a href="#">заказать</a></button>
     </div>
-    <div class="section5" id="section">
+    <div class="section" id="section5">
         <div class="hover-block"></div>
         <div class="monitor">
             <div class="picture-box"></div>
@@ -147,10 +147,44 @@
             <span class="css-typing">- must </span><span class="css-typing1">have</span>
             <button><a href="#">смотреть портфолио</a></button>
         </div>
-        <button class="order"><a href="#">заказать</a></button>
+        <button class="order" onClick="getElementById('win').removeAttribute('style');" type="button"><a href="#">заказать</a></button>
     </div>
 
 
+<div id="win" style="display: none;">
+   <div class="overlay"></div>
+      <div class="visible">
+        <div class="red-block"></div>
+        <button type="button" onClick="getElementById('win').style.display='none';" class="close-window"><img src="template/img/close-button.png" alt="close-window"></button>
+        <h2>дизайн чего хотите заказать?</h2>
+        <span id="win-desc">на каждую услугу заполняется отдельная форма</span>
+          <form action="#" name="popup">
+              <div class="popup-select-style">
+                  <select name="popup-select" id="popup-select">
+                      <option value="Лендинг">Лендинг</option>
+                      <option value="Сайт">Сайт</option>
+                      <option value="API">API</option>
+                      <option value="Продукт">Продукт</option>
+                  </select>
+              </div>
+              <span id="win-add">дополнительно нужно:</span>
+              <div class="win-add-input">
+                <input type="checkbox" class="win-add-checkbox" id="layout">
+                <label for="layout"><span></span>Верстка</label>
+              </div>
+              <div class="win-add-input">
+                <input type="checkbox" class="win-add-checkbox" id="programming">
+                <label for="programming"><span></span>Программирование</label>
+              </div>
+              <div class="win-add-input">
+                  <input type="checkbox" class="win-add-checkbox" id="int-mark">
+                  <label for="int-mark"><span></span>Интернет маркетинг</label>
+              </div>
+              <input type="submit" id="submit-button-form" value="заказать услугу">
+          </form>
+        
+    </div>
+</div>
 
 <div id="page-preloader">
     <span class="spinner"></span>
@@ -158,7 +192,6 @@
 
 
 <script src="template/js/jquery-3.1.0.min.js"></script>
-<script src="template/js/typed.min.js"></script>
 <script src="template/js/stub.js"></script>
 <script src="https://use.fontawesome.com/9ae2a3549a.js"></script>
 </body>

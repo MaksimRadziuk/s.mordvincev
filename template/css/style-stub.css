@@ -27,7 +27,7 @@ button {
     display: block;
     visibility: visible;
 }
-.section1 {
+#section1 {
     display: none;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@ button {
     background-repeat: no-repeat;
     background-position: left top;
 }
-.section2 {
+#section2 {
     display: none;
   
     top: 0;
@@ -56,7 +56,7 @@ button {
     background-repeat: no-repeat;
     background-position: left top;
 }
-.section3 {
+#section3 {
     display: none;
     top: 0;
     left: 0;
@@ -70,7 +70,7 @@ button {
     background-repeat: no-repeat;
     background-position: left top;
 }
-.section4 {
+#section4 {
     display: none;
     top: 0;
     left: 0;
@@ -84,7 +84,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
 }
-.section5 {
+#section5 {
     display: none;
     top: 0;
     left: 0;
@@ -108,17 +108,17 @@ button {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-.section1 .hover-block {
+#section1 .hover-block {
     background-image: url(../img/hover-bcg1-1920x1070.png);
 }
-.section3 .hover-block {
+#section3 .hover-block {
     background-image: url(../img/hover-bcg3-1920x1070.png);
 }
-.section4 .hover-block {
+#section4 .hover-block {
     background-image: url(../img/hover-bcg4-1920x1070.png);
     background-position: center;
 }
-.section5 .hover-block {
+#section5 .hover-block {
     background-image: url(../img/hover-bcg5-1920x1070.png);
     background-position: center;
 }
@@ -184,23 +184,23 @@ button {
         top:0;
     }
 }
-.section1 .picture-box:before {
+#section1 .picture-box:before {
     content: '';
     background-image: url(../img/content1-522x1378.png);
 }
-.section2 .picture-box:before {
+#section2 .picture-box:before {
     content: '';
     background-image: url(../img/content2.png);
 }
-.section3 .picture-box:before {
+#section3 .picture-box:before {
     content: '';
     background-image: url(../img/content3.png);
 }
-.section4 .picture-box:before {
+#section4 .picture-box:before {
     content: '';
     background-image: url(../img/content4.png);
 }
-.section5 .picture-box:before {
+#section5 .picture-box:before {
     content: '';
     background-image: url(../img/content5.png);
 }
@@ -329,19 +329,19 @@ button {
     margin-left: 50px;
     text-transform: uppercase;
 }
-.section1 .block-color {
+#section1 .block-color {
     background-color: #f54657;
 }
-.section2 .block-color {
+#section2 .block-color {
     background-color: #b6c02c;
 }
-.section3 .block-color {
+#section3 .block-color {
     background-color: #36d8c1;
 }
-.section4 .block-color {
+#section4 .block-color {
     background-color: #d8ce6d;
 }
-.section5 .block-color {
+#section5 .block-color {
     background-color: #b21623;
 }
 .css-typing {
@@ -371,11 +371,11 @@ button {
     -webkit-animation: types 4s steps(50, end);
     animation: types 4s steps(50, end);
 }
-.section5 .css-typing {
+#section5 .css-typing {
     margin-top: 45px;
     font-size: 72px;
 }
-.section5 .css-typing1 {
+#section5 .css-typing1 {
     font-size: 72px;
     margin-left: 190px;
 }
@@ -405,36 +405,205 @@ button {
     cursor: pointer;
     }
 
+/*===== ПРЕЛОАДЕР =====*/
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background:#fff;
+    z-index: 1000;
+}
+
+#page-preloader .spinner {
+    background: url("../img/spinner.gif") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+    background-size: contain;
+    top:50%;
+    height: 300px;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    position: absolute;
+    width: 300px;
+}
+
+/*==== модальное окно - попап ======*/
+
+.overlay {
+    background: #363b42;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    opacity: .8;
+}
+.visible {
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    margin-top: -285px;
+    overflow: hidden;
+    z-index: 2000;
+    width: 570px;
+    height: 640px;
+    padding: 20px 50px;
+    margin-left: -170px;
+    box-sizing: border-box;
+}
+.red-block {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 4px;
+    height: 110px;
+    background-color: #f54657;
+}
+#win .close-window {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+}
+#win .close-window img {
+    width: 100%;
+}
+#win button[type="button"]:hover {
+    cursor: pointer;
+}
+#win h2 {
+    font-family: 'Bicubik', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: #394048;
+    text-transform: uppercase;
+}
+#win-desc {
+    font-family:'Geometria', sans-serif;
+    font-size: 16px;
+    color: #394048;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.popup-select-style {
+    overflow: hidden; 
+    height: 34px;
+    background: url(../img/arrow-down.png) no-repeat right #DDD;
+    width: 99%;
+    margin: 40px auto;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.popup-select-style select {
+    border-radius: 0;
+    background: transparent;
+    height: 34px;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Geometria', sans-serif;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    -webkit-appearance: none;
+    width: 100%;
+
+   }
+
+.popup-select-style select:focus {
+    outline: none;
+    border: none;
+}
+#win-add {
+    font-family: Bicubik, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#394048;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 20px;
+}
+.win-add-input {
+    display: block;
+}
+.win-add-checkbox {
+    display: none;
+}
+.win-add-checkbox label {
+    display: inline-block;
+    font-family: Geometria, sans-serif;
+    font-size: 16px;
+}
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
+    background:url(../img/checkbox-bcg.png) left top no-repeat;
+    cursor: pointer;
+    margin:15px 30px 15px 0;
+}
+input.win-add-checkbox:checked + label span {
+    background:url(../img/checkbox-checked.png) top no-repeat;
+}
+#submit-button-form {
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    width: 60%;
+    height: 60px;
+    background-color: #f54657;
+    font-family: Bicubik, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:#fff;
+}
+#submit-button-form:focus {
+    outline: none;
+}
+
+
 @media all and (max-width: 1680px) {
-    .section1 {
+    #section1 {
         background-size:1780px 1050px;
         background-position: right bottom;
     }
-    .section2 {
+    #section2 {
         background-size:1780px 1070px;
         background-position: center;
     }
-    .section3 {
+    #section3 {
         background-size:1780px 1070px;
         background-position: center;
     }
-    .section4 {
+    #section4 {
         background-size:1780px 1070px;
         background-position: center;
     }
-    .section5 {
+    #section5 {
         background-size:1780px 1070px;
         background-position: center;
     }
-    .section1 .hover-block {
+    #section1 .hover-block {
         background-size:1780px 1050px;
         background-position: right bottom;
     }
-    .section4 .hover-block {
+    #section4 .hover-block {
         background-size:1780px 1070px;
         background-position: center;
     }
-    .section5 .hover-block {
+    #section5 .hover-block {
         background-size:1780px 1070px;
         background-position: center;
     }
@@ -493,14 +662,198 @@ button {
     }
 }
 
+@media all and (max-width: 1440px){
+    #section1 {
+        background-size:1780px 1050px;
+        background-position: right bottom;
+    }
+    #section2 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    #section3 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    #section4 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    #section5 {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    #section1 .hover-block {
+        background-size:1780px 1050px;
+        background-position: right bottom;
+    }
+    #section4 .hover-block {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    #section5 .hover-block {
+        background-size:1780px 1070px;
+        background-position: center;
+    }
+    .monitor {
+        width: 630px;
+        height: 700px;
+        top: 240px;
+        left: 375px;
+        background-size: 100%;
+    }
+    .picture-box {
+        top: 20px;
+        left: 15px;
+        width: 600px;
+        height: 340px;  
+    }
+    .picture-box:before {
+        width: 600px;
+        height: 1478px;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            top:905px;
+        }
+        100% {
+            top: 240px;
+        }
+    }
+    .block-color {
+        width: 500px;
+        height: 400px;
+        top: 152px;
+        }
+    @keyframes rightBoxAppearance {
+        0% {
+            right: -505px;
+        }
+        50% {
+            right: -505px;
+        }
+        95% {
+            right: 30px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    .visible {
+        left: 50%;
+        top: 40%;
+        margin-top: -235px;
+        width: 570px;
+        height: 640px;
+        padding: 20px 50px;
+        margin-left: -250px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    #section1 {
+        background-size:1450px 800px;
+        background-position: right bottom;
+    }
+    #section2 {
+        background-size:1450px 800px;
+        background-position: center;
+    }
+    #section3 {
+        background-size:1450px 800px;
+        background-position: center;
+    }
+    #section4 {
+        background-size:1450px 800px;
+        background-position: center;
+    }
+    #section5 {
+        background-size:1450px 800px;
+        background-position: center;
+    }
+    #section1 .hover-block {
+        background-size:1450px 800px;
+        background-position: right bottom;
+    }
+    #section4 .hover-block {
+        background-size:1450px 800px;
+        background-position: center;
+    }
+    #section5 .hover-block {
+        background-size:1450px 800px;
+        background-position: center;
+    }
+    .monitor {
+        width: 550px;
+        height: 600px;
+        top: 200px;
+        left: 440px;
+        background-size: 100%;
+    }
+    .picture-box {
+        top: 17px;
+        left: 13px;
+        width: 524px;
+        height: 300px;  
+    }
+    .picture-box:before {
+        width: 530px;
+        height: 1478px;
+    }
+    @keyframes bottomAppearance {
+        0% {
+            top:905px;
+        }
+        100% {
+            top: 240px;
+        }
+    }
+    .block-color {
+        width: 430px;
+        height: 360px;
+        top: 140px;
+        }
+    @keyframes rightBoxAppearance {
+        0% {
+            right: -435px;
+        }
+        50% {
+            right: -435px;
+        }
+        95% {
+            right: 30px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    .css-typing {
+        font-size: 36px;
+    }
+    .css-typing1 {
+        font-size: 36px;
+    }
+    .visible {
+        left: 50%;
+        top: 50%;
+        margin-top: -300px;
+        width: 450px;
+        height: 550px;
+        padding: 20px 50px;
+        margin-left: -225px;
+    }
+    input[type="checkbox"] + label span {
+        margin:10px 30px 10px 0;
+    }
+}
 
 
 @media all and (max-width: 1280px){
 
-    .section1 {
+    #section1 {
         background-size:1280px 720px;
     }
-    .section1 .hover-block {
+    #section1 .hover-block {
         background-size:1280px 720px;
     }
     .monitor {
@@ -557,21 +910,30 @@ button {
     .css-typing1 {
         font-size: 36px;
     }
-    .section5 .css-typing {
+    #section5 .css-typing {
         margin-top: 45px;
         font-size: 48px;
     }
-    .section5 .css-typing1 {
+    #section5 .css-typing1 {
         font-size: 48px;
         margin-left: 110px;
     }
+    .visible {
+        left: 50%;
+        top: 40%;
+        margin-top: -275;
+        width: 450px;
+        height: 550px;
+        padding: 20px 50px;
+        margin-left: -225px;
+    }
 }
 @media all and (max-width: 1024px) {
-    .section1 {
+    #section1 {
         background-size:1230px 768px;
         background-position: bottom right;
     }
-    .section1 .hover-block {
+    #section1 .hover-block {
         background-size:1230px 768px;
         background-position: bottom right;
     }
@@ -632,11 +994,11 @@ button {
         font-size: 24px;
         margin-left: 70px;
     }
-    .section5 .css-typing {
+    #section5 .css-typing {
         margin-top: 45px;
         font-size: 34px;
     }
-    .section5 .css-typing1 {
+    #section5 .css-typing1 {
         font-size: 34px;
         margin-left: 70px;
     }
@@ -644,6 +1006,14 @@ button {
         left: 0px;
         width: 100.5%;
         padding: 30px 30px; 
+    }
+    .visible {
+        left: 50%;
+        top: 40%;
+        margin-top: -210px;
+        width: 450px;
+        height: 550px;
+        margin-left: -225px;
     }
 }
 
@@ -679,24 +1049,35 @@ button {
 }
 
 @media all and (max-width: 768px) {
-    .section1 {
+    #section1 {
         background-image: url(../img/bcg1-768x1024.png);
         background-position: top left;
         background-size: 768px 1024px;
     }
-    .section1 .hover-block {
+    #section1 .hover-block {
         display: none;
     }
-    .hover-block {
+    #section2 {
+        background:url(../img/bcg2-768x1024.png);
         background-position: top left;
-        background-size: 768px 1024px;
     }
-    .section5 {
+    #section3 {
+        background:url(../img/bcg3-768x1024.png);
+        background-position: center;
+    }
+    #section4 {
+        background:url(../img/bcg4-768x1024.png);
+        background-position: center;
+    }
+    #section4 .hover-block {
+        background: url(../img/hover-bcg4-768x1024.png) center no-repeat;
+    }
+    #section5 {
         background-image: url(../img/bcg5-768x1024.png);
         background-position: center;
         background-size: 768px 1024px;
     }
-    .section5 .hover-block {
+    #section5 .hover-block {
         background-image: url(../img/hover-bcg5-768x1024.png);
         background-position: center;
         background-size: 768px 1024px;
@@ -762,3 +1143,6 @@ button {
         padding: 30px 30px; 
     }
 }
+
+
+
