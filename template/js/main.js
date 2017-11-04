@@ -181,11 +181,6 @@ $("document").ready(function(){
 
 
 
-    setTimeout(function () {
-        $('#main-welcome .order-design').css('display','block').children().focus();
-    },1000)
-
-
 });
 
 

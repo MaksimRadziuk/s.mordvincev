@@ -498,11 +498,13 @@ button {
 .popup-select-style {
     overflow: hidden; 
     height: 34px;
-    background: url(../img/arrow-down.png) no-repeat right #DDD;
+    background: url(../img/arrow-down.png) no-repeat #DDD;
+    background-position: 95% 50%;
     width: 99%;
     margin: 40px auto;
     padding-right: 10px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 .popup-select-style select {
     border-radius: 0;
@@ -538,15 +540,16 @@ button {
 .win-add-checkbox {
     display: none;
 }
-.win-add-checkbox label {
+.win-add-input>label {
     display: inline-block;
-    font-family: Geometria, sans-serif;
+    font-family: 'Geometria', sans-serif;
     font-size: 16px;
 }
 input[type="checkbox"] + label span {
     display: inline-block;
     width: 30px;
     height: 30px;
+    font-family: 'Geometria', sans-serif;
     vertical-align:middle;
     background:url(../img/checkbox-bcg.png) left top no-repeat;
     cursor: pointer;
